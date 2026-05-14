@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+{% include 'sidebar.html' %}
+
+<div class="main">
+
+<h1>Analytics Dashboard</h1>
+<p>Insights from your predictions</p>
+
+<br>
+
+<div class="stats">
+
+<div class="stat-card">
+<h4>Total Predictions</h4>
+<h2>{{total}}</h2>
+</div>
+
+<div class="stat-card">
+<h4>Average Price</h4>
+<h2>₹ {{avg}}</h2>
+</div>
+
+<div class="stat-card">
+<h4>Highest Price</h4>
+<h2>₹ {{max}}</h2>
+</div>
+
+<div class="stat-card">
+<h4>Lowest Price</h4>
+<h2>₹ {{min}}</h2>
+</div>
+
+</div>
+
+<div class="chart-box">
+
+<div class="chart">
+<h3>Price Distribution</h3>
+<br>
+<img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['20','40','60','80'],datasets:[{label:'Prices',data:[3,6,9,5]}]}}" width="100%">
+</div>
+
+<div class="chart">
+<h3>Top Locations</h3>
+<br>
+<img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Bangalore','Hyderabad','Pune'],datasets:[{data:[10,7,5]}]}}" width="100%">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

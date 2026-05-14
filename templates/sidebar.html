@@ -1,0 +1,36 @@
+<div class="sidebar">
+
+    <div class="logo">
+        House Price<br>Prediction
+    </div>
+
+    <a href="/home"
+       class="{% if request.path == '/home' %}active{% endif %}">
+       🏠 Home
+    </a>
+
+    <a href="/predict_page"
+       class="{% if request.path == '/predict_page' %}active{% endif %}">
+       📈 Predict Price
+    </a>
+
+    <a href="/history"
+       class="{% if request.path == '/history' %}active{% endif %}">
+       📜 View History
+    </a>
+
+    <a href="/analytics"
+       class="{% if request.path == '/analytics' %}active{% endif %}">
+       📊 Analytics
+    </a>
+
+    <a href="/about"
+       class="{% if request.path == '/about' %}active{% endif %}">
+       ℹ️ About
+    </a>
+
+    <a href="/">
+       🚪 Logout
+    </a>
+
+</div>

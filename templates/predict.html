@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+{% include 'sidebar.html' %}
+
+<div class="main">
+
+<div class="card">
+
+<h1>Predict House Price</h1>
+<p>Enter the details of the house below</p>
+
+<form action="/predict" method="POST">
+
+<div class="form-grid">
+
+<div>
+<label>Area (Sq Ft)</label>
+<input type="number" name="area" required>
+</div>
+
+<div>
+<label>Bedrooms</label>
+<input type="number" name="bedrooms" required>
+</div>
+
+<div>
+<label>Bathrooms</label>
+<input type="number" name="bathrooms" required>
+</div>
+
+<div>
+<label>Parking</label>
+<input type="number" name="parking" required>
+</div>
+
+<div>
+<label>Location</label>
+<select>
+<option>Bangalore</option>
+<option>Hyderabad</option>
+<option>Pune</option>
+<option>Mumbai</option>
+</select>
+</div>
+
+<div>
+<label>Property Type</label>
+<select>
+<option>Apartment</option>
+<option>Villa</option>
+<option>Independent House</option>
+</select>
+</div>
+
+<div>
+<label>Furnishing Status</label>
+<select>
+<option>Semi-Furnished</option>
+<option>Fully Furnished</option>
+<option>Unfurnished</option>
+</select>
+</div>
+
+<div>
+<label>Age of Property</label>
+<input type="number" name="age" required>
+</div>
+
+</div>
+
+<button class="btn">Predict Price</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

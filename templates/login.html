@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <div class="auth-left">
+            <h1>House Price Prediction</h1>
+            <p>Find the best price for your dream home</p>
+
+            <img src="/static/house.jpg">
+        </div>
+
+        <div class="auth-right">
+            <h1>Welcome Back!</h1>
+            <p>Login to your account</p>
+
+            <form action="/login_user" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <input type="password" name="password" placeholder="Enter your password" required>
+
+                <button class="btn" style="width:100%;">Login</button>
+            </form>
+
+            <br>
+
+            <p>Don't have an account?
+                <a href="/register">Register</a>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

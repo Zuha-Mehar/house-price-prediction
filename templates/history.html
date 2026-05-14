@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+{% include 'sidebar.html' %}
+
+<div class="main">
+
+<div class="card">
+
+<h1>Prediction History</h1>
+<p>View all your past predictions</p>
+
+<br>
+
+<table class="table">
+
+<tr>
+<th>Area</th>
+<th>Bedrooms</th>
+<th>Bathrooms</th>
+<th>Price</th>
+<th>Category</th>
+</tr>
+
+{% for r in rows %}
+<tr>
+<td>{{r[2]}}</td>
+<td>{{r[3]}}</td>
+<td>{{r[4]}}</td>
+<td class="price">₹ {{r[7]}}</td>
+<td class="category">Middle Class</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
